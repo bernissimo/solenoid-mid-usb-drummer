@@ -17,7 +17,7 @@ void setup() {
 
 void loop() {
  
-  midiEventPacket_t rx = MidiUSB.read();  //listen for new MIDI messages all chanels
+  midiEventPacket_t rx = MidiUSB.read();  //listen for new MIDI messages all channels
  
   switch (rx.header) {
     case 0x9:            //Note On message
